@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Cardy's Tacos & Takeaways | Blackheath, Cape Town</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="shortcut icon" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/27837609289?text=Hi%20Cardy%27s!%20I%27d%20like%20to%20place%20an%20order%20%F0%9F%8C%AE" target="_blank" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><img src="assets/images/logo.png" alt="Cardy's Tacos" class="nav-logo-img" /></a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#order">Order Now</a></li>
+    <li><a href="#location">Find Us</a></li>
+    <li><a href="https://wa.me/27837609289?text=Hi%20Cardy%27s!%20I%27d%20like%20to%20place%20an%20order%20%F0%9F%8C%AE" target="_blank" class="nav-cta">💬 Order on WhatsApp</a></li>
+  </ul>
+  <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="drawer">
+  <a href="#about" onclick="toggleMenu()">Our Story</a>
+  <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+  <a href="#menu" onclick="toggleMenu()">Menu</a>
+  <a href="#order" onclick="toggleMenu()">Order Now</a>
+  <a href="#location" onclick="toggleMenu()">Find Us</a>
+  <a href="https://wa.me/27837609289?text=Hi%20Cardy%27s!%20I%27d%20like%20to%20place%20an%20order%20%F0%9F%8C%AE" target="_blank" class="mob-wa" onclick="toggleMenu()">💬 Order on WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-word-cloud" aria-hidden="true">
+    <span class="hero-word hero-word--xl hero-word--center">TACOS</span>
+    <span class="hero-word hero-word--lg hero-word--left-top hero-word--drift-a">STREET FOOD</span>
+    <span class="hero-word hero-word--md hero-word--right-mid hero-word--vertical">FOOD TRUCKS</span>
+    <span class="hero-word hero-word--md hero-word--left-mid">GATSBYS</span>
+    <span class="hero-word hero-word--sm hero-word--right-top">PIZZAS</span>
+    <span class="hero-word hero-word--sm hero-word--left-bottom hero-word--vertical">QUESADILLAS</span>
+    <span class="hero-word hero-word--md hero-word--right-bottom hero-word--drift-b">BURGERS</span>
+    <span class="hero-word hero-word--sm hero-word--left-edge">CHIP ROLLS</span>
+    <span class="hero-word hero-word--sm hero-word--right-edge hero-word--vertical">LOADED FRIES</span>
+    <span class="hero-word hero-word--md hero-word--center-top hero-word--drift-c">GRILLED</span>
+    <span class="hero-word hero-word--lg hero-word--left-lower">TAKEAWAYS</span>
+    <span class="hero-word hero-word--sm hero-word--right-lower">SHAWARMA</span>
+    <span class="hero-word hero-word--sm hero-word--upper-right">WRAPS</span>
+    <span class="hero-word hero-word--md hero-word--mid-right">HOT &amp; FRESH</span>
+    <span class="hero-word hero-word--sm hero-word--lower-left hero-word--vertical">FAST BITE</span>
+  </div>
+  <div class="hero-left">
+    <div class="eyebrow">🔥 Blackheath's Finest Street Food</div>
+    <h1 class="hero-title">
+      <span>Cardy's</span>
+      <span class="accent">Tacos &</span>
+      <span class="sub">Takeaways</span>
+    </h1>
+    <p class="hero-desc">Real food. Real flavour. Made fresh by hand at the Nel Tank gate in Blackheath, Cape Town. Come taste what Ricardo has been cooking up.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-fire">See The Menu</a>
+      <a href="https://wa.me/27837609289?text=Hi%20Cardy%27s!%20I%27d%20like%20to%20place%20an%20order%20%F0%9F%8C%AE" target="_blank" class="btn-green">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order Now
+      </a>
+    </div>
+    <div class="hero-badges">
+      <div class="badge">🌮 Tacos</div>
+      <div class="badge">🍕 Pizzas</div>
+      <div class="badge">🍔 Burgers</div>
+      <div class="badge">🥪 Gatsbys</div>
+      <div class="badge">🍟 Chips</div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="assets/images/logo.png" alt="Cardy's Tacos Logo" class="hero-logo-img" />
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-inner">
+    TACOS &nbsp;•&nbsp; PIZZAS &nbsp;•&nbsp; BURGERS &nbsp;•&nbsp; GATSBYS &nbsp;•&nbsp; CHIPROLLS &nbsp;•&nbsp; QUESADILLAS &nbsp;•&nbsp; LOADED FRIES &nbsp;•&nbsp; MADE FRESH &nbsp;•&nbsp;
+    TACOS &nbsp;•&nbsp; PIZZAS &nbsp;•&nbsp; BURGERS &nbsp;•&nbsp; GATSBYS &nbsp;•&nbsp; CHIPROLLS &nbsp;•&nbsp; QUESADILLAS &nbsp;•&nbsp; LOADED FRIES &nbsp;•&nbsp; MADE FRESH &nbsp;•&nbsp;
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="fade-up">
+    <div class="about-card about-card-rich">
+      <!-- Portrait photo - face fully visible -->
+      <div class="about-card-media">
+        <img src="assets/images/ricardo.jpg" alt="Ricardo, Chef at Cardy's Tacos" class="about-chef-img" />
+        <div class="about-chef-badge">Founder &amp; Chef</div>
+      </div>
+      <!-- Quote below the photo - clean, no overlap -->
+      <div class="about-card-copy">
+        <p class="about-quote about-quote-tight">"I make every meal like it's for someone I love — because it is. This community is my <span>family.</span>"</p>
+        <p class="about-attr about-attr-tight">— Ricardo, Founder &amp; Chef</p>
+      </div>
+    </div>  </div>
+  <div class="about-text fade-up">
+    <div class="sec-label">Our Story</div>
+    <h2 class="sec-title">From Passion<br>to Plate</h2>
+    <p>Cardy's Tacos & Takeaways was born from one young man's determination to do something meaningful — for himself and for his community in Blackheath, Eersterivier.</p>
+    <p>Ricardo runs his food truck from the gate of Nel Tank on Saxenburg Road, preparing every meal himself with care, creativity, and serious culinary skill. Whether it's a crispy quesadilla, a loaded gatsby, or a saucy pizza — every plate is made fresh and made with love.</p>
+    <p>This isn't just a takeaway. It's a local legend in the making.</p>
+    <div class="stats">
+      <div><div class="stat-num">100%</div><div class="stat-lbl">Homemade</div></div>
+      <div><div class="stat-num">1</div><div class="stat-lbl">Passionate Chef</div></div>
+      <div><div class="stat-num">∞</div><div class="stat-lbl">Community Love</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-sec" id="gallery">
+  <div class="sec-label fade-up">Food That Speaks For Itself</div>
+  <h2 class="sec-title fade-up">Fresh From<br>The Truck</h2>
+  <p class="gallery-intro fade-up">Every dish made to order, every time. Here's a taste of what's waiting for you at the Nel Tank gate.</p>
+  <div class="gallery-carousel fade-up" id="galleryCarousel">
+    <button class="gc-nav gc-prev" id="galleryPrev" aria-label="Previous gallery image">❮</button>
+    <div class="gallery-grid" id="galleryTrack">
+    <div class="g-item"><div class="g-inner g-photo-inner g-feature-inner"><img src="assets/images/gallery-special-01.png" alt="Chef specials from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Chef Specials 🍽️</div></div><div class="g-over"><div class="g-tag g-tag--special">Fan Favourite</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-burger.png" alt="Smash burger from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Smash Burgers 🍔</div></div><div class="g-over"><div class="g-tag g-tag--core">Triple Stack</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/quesadilla.png" alt="Quesadilla from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Quesadilla 🧀</div></div><div class="g-over"><div class="g-tag g-tag--core">Cheesy Goodness</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/taco.png" alt="Taco from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Tacos 🌮</div></div><div class="g-over"><div class="g-tag g-tag--core">Fresh Fold</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-pizza.png" alt="Fresh pizza from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Fresh Pizzas 🍕</div></div><div class="g-over"><div class="g-tag g-tag--core">With Chips</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-fries.png" alt="Loaded fries from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Loaded Fries 🍟</div></div><div class="g-over"><div class="g-tag g-tag--core">So Good</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-gatsby.png" alt="Gatsby from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Steak Roll + Chips 🥖</div></div><div class="g-over"><div class="g-tag g-tag--core">Loaded Up</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/chip-roll.png" alt="Chip roll from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Chip Roll 🌯</div></div><div class="g-over"><div class="g-tag g-tag--core">Street Classic</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/toasty.png" alt="Toasty from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Toasty 🥪</div></div><div class="g-over"><div class="g-tag g-tag--core">Hot & Crisp</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-special-02.png" alt="Special menu item from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Special 02 ✨</div></div><div class="g-over"><div class="g-tag g-tag--special">House Favorite</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-special-03.png" alt="Special menu item from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Special 03 ✨</div></div><div class="g-over"><div class="g-tag g-tag--special">Must Try</div></div></div></div>
+    <div class="g-item"><div class="g-inner g-photo-inner"><img src="assets/images/gallery-special-04.png" alt="Special menu item from Cardy's Tacos" class="g-photo-img" /><div class="g-chef-grad"></div><div class="g-emoji g-chef-emoji"><div class="g-lbl g-chef-lbl">Special 04 ✨</div></div><div class="g-over"><div class="g-tag g-tag--special">Today’s Pick</div></div></div></div>
+    </div>
+    <div class="gc-dots" id="galleryDots" aria-label="Gallery slide indicators"></div>
+    <button class="gc-nav gc-next" id="galleryNext" aria-label="Next gallery image">❯</button>
+  </div>
+  <div class="gallery-cta fade-up">
+    <p>📸 Got a photo of your order? Share it with Ricardo on WhatsApp!</p>
+    <a href="https://wa.me/27837609289?text=Hey%20Ricardo!%20Here%27s%20a%20pic%20of%20my%20order%20%F0%9F%98%8D" target="_blank" class="btn-green">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Share Your Food Pic
+    </a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-sec" id="menu">
+  <div class="sec-label">What We're Serving</div>
+  <h2 class="sec-title">Our Menu</h2>
+  <p class="menu-intro">Everything freshly prepared. Pizzas with side chips +R10. Tap any item to order directly on WhatsApp. Prices in ZAR.</p>
+  <div class="menu-tabs">
+    <button class="tab-btn active" onclick="showTab('mains',this)">🍔 Mains</button>
+    <button class="tab-btn" onclick="showTab('pizzas',this)">🍕 Pizzas</button>
+    <button class="tab-btn" onclick="showTab('gatsbys',this)">🥖 Gatsbys &amp; Rolls</button>
+    <button class="tab-btn" onclick="showTab('tacos',this)">🌮 Tacos &amp; Sides</button>
+  </div>
+  <div class="menu-panel active" id="tab-mains" data-items='[
+    ["Triple Smash Cheese Burger &amp; Chips","R60","Triple+Smash+Cheese+Burger+%26+Chips",""],
+    ["Double Smash Cheese Burger &amp; Chips","R50","Double+Smash+Cheese+Burger+%26+Chips",""],
+    ["Bacon &amp; Egg Roll","R30","Bacon+%26+Egg+Roll",""],
+    ["Chicken Fillet Burger &amp; Chips","R65","Chicken+Fillet+Burger+%26+Chips",""],
+    ["Beef Cheese Burger &amp; Chips","R40","Beef+Cheese+Burger+%26+Chips",""],
+    ["Loaded Fries","R40","Loaded+Fries","Regular"],
+    ["Large Loaded Fries","R65","Large+Loaded+Fries",""],
+    ["Small Chips","R22","Small+Chips",""]
+  ]'></div>
+  <div class="menu-panel" id="tab-pizzas" data-items='[
+    ["Vienna Pizza","R35","Vienna+Pizza","+R10 side chips"],
+    ["Ham Pizza","R35","Ham+Pizza","+R10 side chips"],
+    ["Vienna &amp; Ham Pizza","R40","Vienna+%26+Ham+Pizza","+R10 side chips"],
+    ["Chicken Pizza","R40","Chicken+Pizza","+R10 side chips"]
+  ]'></div>
+  <div class="menu-panel" id="tab-gatsbys" data-items='[
+    ["Russian Roll","R30","Russian+Roll",""],
+    ["Russian &amp; Chips","R25","Russian+%26+Chips",""],
+    ["Mini Vienna Gatsby","R30","Mini+Vienna+Gatsby",""],
+    ["Mini Russian Gatsby","R32","Mini+Russian+Gatsby",""],
+    ["Mini Chicken Gatsby","R35","Mini+Chicken+Gatsby",""],
+    ["Mini Beef Burger Gatsby","R35","Mini+Beef+Burger+Gatsby",""],
+    ["Vienna Chiproll","R30","Vienna+Chiproll",""],
+    ["Russian Chiproll","R32","Russian+Chiproll",""],
+    ["Chiproll","R25","Chiproll",""]
+  ]'></div>
+  <div class="menu-panel" id="tab-tacos" data-items='[
+    ["Chicken Quesadilla &amp; Chips","R65","Chicken+Quesadilla+%26+Chips",""],
+    ["Upsize Chicken Taco","R35","Upsize+Chicken+Taco",""]
+  ]'></div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="order-sec" id="order">
+  <div class="sec-label">Quick WhatsApp Ordering</div>
+  <h2 class="sec-title">Build Your<br>Order</h2>
+  <p class="order-intro">Fill in the details once, then send Ricardo a clean, complete order message on WhatsApp.</p>
+
+  <form class="order-form" id="waOrderForm">
+    <div class="order-grid">
+      <label class="order-field">
+        <span>Name</span>
+        <input type="text" id="orderName" name="name" placeholder="Your full name" required />
+      </label>
+
+      <label class="order-field">
+        <span>Phone Number</span>
+        <input type="tel" id="orderPhone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="083 123 4567" pattern="^0\d{2}\s?\d{3}\s?\d{4}$" title="Use SA format: 083 123 4567" required />
+      </label>
+
+      <label class="order-field">
+        <span>Order Type</span>
+        <select id="orderType" name="type" required>
+          <option value="Collection" selected>Collection</option>
+          <option value="Delivery">Delivery</option>
+        </select>
+      </label>
+
+      <label class="order-field">
+        <span>When Do You Need It?</span>
+        <select id="orderWhen" name="when" required>
+          <option value="ASAP" selected>ASAP</option>
+          <option value="In 15 minutes">In 15 minutes</option>
+          <option value="In 30 minutes">In 30 minutes</option>
+          <option value="In 45 minutes">In 45 minutes</option>
+          <option value="In 1 hour">In 1 hour</option>
+          <option value="Custom time (see notes)">Custom time (add in notes)</option>
+        </select>
+      </label>
+
+      <label class="order-field">
+        <span>Payment Method</span>
+        <select id="orderPayment" name="payment" required>
+          <option value="Cash" selected>Cash</option>
+          <option value="EFT">EFT</option>
+          <option value="Card">Card</option>
+        </select>
+      </label>
+
+      <label class="order-field order-field--full" id="orderAddressWrap" hidden>
+        <span>Delivery Address</span>
+        <input type="text" id="orderAddress" name="address" placeholder="Street, area, landmark, gate/business name" />
+      </label>
+
+      <label class="order-field order-field--full">
+        <span>Your Order</span>
+        <textarea id="orderItems" name="items" rows="5" placeholder="Example:&#10;2x Triple Smash Cheese Burgers&#10;1x Chicken Quesadilla & Chips&#10;1x Large Loaded Fries" required></textarea>
+      </label>
+
+      <label class="order-field order-field--full">
+        <span>Extra Notes</span>
+        <textarea id="orderNotes" name="notes" rows="3" placeholder="No onions, extra sauce, exact location pin, etc."></textarea>
+      </label>
+    </div>
+
+    <div class="order-actions">
+      <button type="submit" class="order-send-btn">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Send Cool Order on WhatsApp
+      </button>
+      <p class="order-tip">Tip: Include quantities and extras in your order list so Ricardo can prepare it faster.</p>
+    </div>
+  </form>
+</section>
+
+<!-- LOCATION -->
+<section class="loc-sec" id="location">
+  <div class="map-wrap fade-up">
+    <iframe src="https://maps.google.com/maps?q=-33.956750,18.698083&z=17&output=embed"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Cardy's Tacos location"></iframe>
+  </div>
+  <div class="fade-up">
+    <div class="sec-label">Find Us</div>
+    <h2 class="sec-title">We're<br>Right Here</h2>
+    <div class="loc-card">
+      <div class="loc-lbl">Address</div>
+      <div class="loc-val">Nel Tank Gate, 1 Saxenburg Road<br>Blackheath, Cape Town 7580</div>
+    </div>
+    <div class="loc-card">
+      <div class="loc-lbl">Phone / WhatsApp</div>
+      <div class="loc-val">083 760 9289</div>
+    </div>
+    <div class="loc-card">
+      <div class="loc-lbl">How to Find Us</div>
+      <div class="loc-val">Look for the food truck at the front gate of Nel Tank on Saxenburg Road. You can't miss us!</div>
+    </div>
+    <div class="cta-row">
+      <a href="tel:0837609289" class="btn-call">📞 Call to Order</a>
+      <a href="https://wa.me/27837609289?text=Hi%20Cardy%27s!%20I%27d%20like%20to%20place%20an%20order%20%F0%9F%8C%AE" target="_blank" class="btn-wa-lg">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-logo"><img src="assets/images/logo.png" alt="Cardy's Tacos" class="footer-logo-img" /></div>
+    <div class="f-sub">Blackheath's favourite street food 🔥</div>
+  </div>
+  <div class="f-text">
+    <strong>Cardy's Tacos &amp; Takeaways</strong><br>
+    Nel Tank Gate, 1 Saxenburg Rd, Blackheath, Cape Town<br>
+    📞 083 760 9289<br><br>
+    <span class="footer-copy">© 2025 Cardy's Tacos. All rights reserved.</span><br>
+    <span class="footer-credit">Website by <a href="https://mrhdigital.co.za" target="_blank" class="footer-credit-link">Mr. H Digital</a></span>
+  </div>
+</footer>
+
+<div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+  <button class="glb-close" id="galleryLightboxClose" aria-label="Close gallery view">×</button>
+  <button class="glb-nav glb-prev" id="galleryLightboxPrev" aria-label="Previous gallery item">❮</button>
+  <div class="glb-dialog" role="dialog" aria-modal="true" aria-label="Gallery viewer">
+    <div class="glb-stage" id="galleryLightboxStage"></div>
+    <div class="glb-meta"><span id="galleryLightboxCount">1 / 1</span></div>
+  </div>
+  <button class="glb-nav glb-next" id="galleryLightboxNext" aria-label="Next gallery item">❯</button>
+</div>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
