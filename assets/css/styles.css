@@ -321,6 +321,7 @@
       justify-content: center;
       padding: 56px 48px;
     }
+    /* Shared logo styles */
     .hero-logo-img {
       width: min(560px, 98%);
       max-width: 560px;
@@ -332,10 +333,21 @@
       transition: transform .45s cubic-bezier(.22,.61,.36,1), filter .45s ease;
       will-change: transform, filter;
     }
+
+    /* Hide mobile logo by default */
+    .hero-logo-mobile { display: none; }
     @media (hover: hover) and (pointer: fine) {
       .hero-right:hover .hero-logo-img {
         transform: translateX(calc(var(--hero-logo-shift) - 4px)) scale(1.045) rotate(-1.4deg);
         filter: drop-shadow(0 18px 38px rgba(255, 69, 0, .28)) saturate(1.06);
+      }
+    }
+
+    /* Mobile tap/active effect for logo */
+    @media (hover: none) and (pointer: coarse) {
+      .hero-logo-mobile:active {
+        transform: scale(1.045) rotate(-1.4deg);
+        filter: drop-shadow(0 10px 24px rgba(255, 69, 0, .22)) saturate(1.06);
       }
     }
     /* ── MARQUEE ── */
@@ -1171,9 +1183,28 @@
       .hero-left {
         padding: 36px 20px 44px;
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      .hero-logo-mobile {
+        display: block;
+        width: 64px;
+        max-width: 18vw;
+        min-width: 48px;
+        height: auto;
+        margin-right: 10px;
+        flex-shrink: 0;
+        align-self: flex-start;
       }
       .hero-right { display: none; }
       .hero-title { font-size: clamp(50px, 14vw, 80px); }
+      /* Make sure text wraps nicely next to logo */
+      .hero-title, .hero-desc, .hero-btns, .hero-badges {
+        flex: 1 1 0%;
+        min-width: 0;
+      }
       .hero-desc { font-size: 15px; margin: 16px 0 24px; max-width: 100%; }
       .hero-btns { flex-direction: column; gap: 12px; }
       .btn-fire, .btn-green {
