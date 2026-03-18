@@ -1202,10 +1202,10 @@
       }
       .hero-logo-mobile {
         display: block;
-        height: 8em;
+        height: 10em;
         width: auto;
-        max-height: 340px;
-        min-height: 100px;
+        max-height: 400px;
+        min-height: 120px;
         flex-shrink: 0;
         margin-left: 18px;
         align-self: center;
