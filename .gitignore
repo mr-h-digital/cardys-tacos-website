@@ -1,0 +1,35 @@
+# Node modules (if using Node.js tooling)
+node_modules/
+
+# Dependency directories
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# SASS/SCSS cache
+.sass-cache/
+
+# Misc
+*.tmp
+*.swp
+
+# Ignore compiled CSS if using preprocessors (uncomment if needed)
+# assets/css/*.css
